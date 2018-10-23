@@ -7,8 +7,8 @@
     <meta name="mobile-web-app-capable" content="yes">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"/>
 <script>
-function create_iframe(url){
-
+function create_iframe(){
+    var url = 'http://www.elmundo.es';
     var wrapper = jQuery('#url-wrapper');
 
     if(navigator.userAgent.match(/(iPod|iPhone|iPad)/)){
@@ -76,7 +76,7 @@ html,body {
 </style>
   
 </head>
-<body onLoad="create_iframe('http://www.elmundo.es')">
+<body onLoad="create_iframe()">
   PRUEBA
 <div id="url-wrapper">
 </div>
