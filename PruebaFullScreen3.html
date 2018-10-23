@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prueba Fullscreen</title>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+
+  <!-- <script> 
+   $(function(){
+       $('#contentSite').load("https://www.elmundo.es");
+   });
+    </script> -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes">
+<!-- <meta http-equiv="refresh" content="0;URL='https://www.elmundo.es'"> -->
+
+<!--<script>
+var elem = document.documentElement;
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) { /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
+}
+
+function closeFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.mozCancelFullScreen) {
+    document.mozCancelFullScreen();
+  } else if (document.webkitExitFullscreen) {
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) {
+    document.msExitFullscreen();
+  }
+}
+
+      function load() {
+      	if (("standalone" in window.navigator) || !window.navigator.standalone
+                ){
+      		console.log("MODO FULLSCREEN?");
+      	console.log("standalone" in window.navigator);
+      	console.log(window.navigator.standalone);
+      	openFullscreen();
+      	}
+      	
+      }
+      window.onload = load;
+</script>-->
+<style type="text/css">
+html,body {
+  height:100%;
+  margin:0;
+}
+
+body {
+  position: relative;
+}
+.iframe-container {
+    position: absolute;
+    overflow: hidden;
+    /*padding-top: 56.25%;*/
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+
+  max-width: 100%;
+}
+
+.iframe-container iframe {
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    overflow: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling:touch;
+}
+</style>
+  
+</head>
+<body style="overflow:hidden">
+    <div class="iframe-container">
+    <iframe name="contentSite" frameborder="0" class="frame-area" allowfullscreen src="https://www.elmundo.es"></iframe>
+  </div>
+</body>
+</html>
