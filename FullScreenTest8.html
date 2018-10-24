@@ -18,7 +18,7 @@ window.addEventListener("load",function() {
     <script type="text/javascript">
     function showDiv() {
       var userAgent = window.navigator.userAgent;
-      if (userAgent.indexOf(/(iPod|iPhone|iPad)/) || userAgent.indexOf(/AppleWebKit/)){
+      if (userAgent.indexOf(/(iPod|iPhone|iPad)/) && userAgent.indexOf(/AppleWebKit/)){
         // document.getElementById('iframe-container-ios').style.visibility = 'visible';
         // document.getElementById('iframe-container-').style.visibility = 'hidden';
         document.getElementById('iframe-container-ios').style.display = 'block';
