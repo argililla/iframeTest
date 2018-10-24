@@ -17,7 +17,8 @@ window.addEventListener("load",function() {
     </script> -->
     <script type="text/javascript">
     function showDiv() {
-            if (navigator.userAgent.match(/iPhone/i)){
+      var userAgent = window.navigator.userAgent;
+      if (userAgent.match(/iPhone/i) || userAgent.match(/iPad/i)){
         document.getElementById('iframe-contaner-ios').style.visibility = 'visible';
         document.getElementById('iframe-contaner-').style.visibility = 'hidden';
       } else {
