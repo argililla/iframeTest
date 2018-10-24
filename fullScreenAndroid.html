@@ -16,8 +16,8 @@ window.addEventListener("load",function() {
 });
     </script> -->
     <script type="text/javascript">
-    (function( win ){
-  var doc = win.document;
+    function hideURLBar(){
+  var doc = window.document;
   
   // If there's a hash, or addEventListener is undefined, stop here
   if(!win.navigator.standalone && !location.hash && win.addEventListener ){
@@ -48,7 +48,7 @@ window.addEventListener("load",function() {
       }, 0);
     }, false );
   }
-})( this );
+};
     </script>
 <style type="text/css">
 body {
@@ -109,7 +109,7 @@ body#iframe {
 </style>
 <base target="_self">
   </head>
-  <body>
+  <body onload="hideURLBar()">
     <div id="iframe-container">
       <iframe src="https://www.elmundo.es" frameborder="0" allowfullscreen="yes" scrolling="auto"></iframe>
     </div>
