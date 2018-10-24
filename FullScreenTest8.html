@@ -19,13 +19,13 @@ window.addEventListener("load",function() {
     function showDiv() {
       var userAgent = window.navigator.userAgent;
       if (userAgent.match(/(iPod|iPhone|iPad)/) && userAgent.match(/AppleWebKit/)){
-        document.getElementById('iframe-contaner-ios').style.visibility = visible;
-        document.getElementById('iframe-contaner-').style.visibility = hidden;
+        document.getElementById('iframe-container-ios').style.visibility = visible;
+        document.getElementById('iframe-container-').style.visibility = hidden;
         // document.getElementById('iframe-container-ios').style.display = 'block';
         // document.getElementById('iframe-container').style.display = 'none';
       } else {
-        document.getElementById('iframe-contaner-ios').style.visibility = hidden;
-        document.getElementById('iframe-contaner').style.visibility = visible;
+        document.getElementById('iframe-container-ios').style.visibility = hidden;
+        document.getElementById('iframe-container').style.visibility = visible;
         // document.getElementById('iframe-container-ios').style.display = 'none';
         // document.getElementById('iframe-container').style.display = 'block';
       }
